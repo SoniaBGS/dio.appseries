@@ -7,6 +7,8 @@ namespace dio.appseries
     {
         static void Main(string[] args)
         {
+            Serie meuObjeto = nem Serie();
+            
             Console.WriteLine("Hello World!");
         }
     }
