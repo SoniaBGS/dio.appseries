@@ -5,7 +5,7 @@ namespace dio.appseries
         // Atributos
 
         private Genero Genero { get; set; } 
-        private string Tìtulo { get; set; }
+        private string Titulo { get; set; }
         private string Descricao { get; set; }
         private int Ano { get; set; }
 
@@ -15,7 +15,7 @@ namespace dio.appseries
        {
            this.id = id;
            this.Gênero = genero;
-           this.Título = título;
+           this.Título = titulo;
            this.Descrição = descricao;
            this.Ano = ano;
        }
