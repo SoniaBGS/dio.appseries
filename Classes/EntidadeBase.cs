@@ -1,6 +1,6 @@
 namespace dio.appseries
 {
-    public class abstract class EntidadeBase
+    public abstract class EntidadeBase
     {
         public int Id { get; protected set; }
     }
