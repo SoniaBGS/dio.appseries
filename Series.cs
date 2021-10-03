@@ -4,10 +4,84 @@ namespace dio.appseries
     {
         // Atributos
 
-        private Genero Genero { get; set; } 
+        public Series(Genero genero, string titulo, string descricao, int ano, bool excluido) 
+        {
+                this.Genero = genero;
+                this.Titulo = titulo;
+                this.Descricao = descricao;
+                this.Ano = ano;
+                this.Excluido = excluido;
+               
+        }
+        public Series(Genero genero, string titulo, string descricao, int ano, bool excluido) 
+        {
+                this.Genero = genero;
+                this.Titulo = titulo;
+                this.Descricao = descricao;
+                this.Ano = ano;
+                this.Excluido = excluido;
+               
+        }
+        public Series(Genero genero, string titulo, string descricao, int ano, bool excluido) 
+        {
+                this.Genero = genero;
+                this.Titulo = titulo;
+                this.Descricao = descricao;
+                this.Ano = ano;
+                this.Excluido = excluido;
+               
+        }
+        public Series(Genero genero, string titulo, string descricao, int ano, bool excluido) 
+        {
+                this.Genero = genero;
+                this.Titulo = titulo;
+                this.Descricao = descricao;
+                this.Ano = ano;
+                this.Excluido = excluido;
+               
+        }
+        public Series(Genero genero, string titulo, string descricao, int ano, bool excluido) 
+        {
+            this.Genero = genero;
+                this.Titulo = titulo;
+                this.Descricao = descricao;
+                this.Ano = ano;
+                this.Excluido = excluido;
+               
+        }
+        public Series(Genero genero, string titulo, string descricao, int ano, bool excluido) 
+        {
+            this.Genero = genero;
+                this.Titulo = titulo;
+                this.Descricao = descricao;
+                this.Ano = ano;
+                this.Excluido = excluido;
+               
+        }
+        public Series(Genero genero, string titulo, string descricao, int ano, bool excluido) 
+        {
+            this.Genero = genero;
+                this.Titulo = titulo;
+                this.Descricao = descricao;
+                this.Ano = ano;
+                this.Excluido = excluido;
+               
+        }
+        public Series(Genero genero, string titulo, string descricao, int ano, bool excluido) 
+        {
+            this.Genero = genero;
+                this.Titulo = titulo;
+                this.Descricao = descricao;
+                this.Ano = ano;
+                this.Excluido = excluido;
+               
+        }
+                                                                        private Genero Genero { get; set; } 
         private string Titulo { get; set; }
         private string Descricao { get; set; }
         private int Ano { get; set; }
+
+        private bool Excluido {get; set; }
 
        //Métodos
 
@@ -18,6 +92,7 @@ namespace dio.appseries
            this.Título = titulo;
            this.Descrição = descricao;
            this.Ano = ano;
+           this.Excluido = false;
        }
 
        public override string ToString()
@@ -40,5 +115,10 @@ namespace dio.appseries
        {
            return this.Id;
        }
+       public void Excluir() 
+       {
+           this.Excluir = true;
+       }
+
     }
 }
