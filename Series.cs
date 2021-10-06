@@ -76,7 +76,8 @@ namespace dio.appseries
                 this.Excluido = excluido;
                
         }
-                                                                        private Genero Genero { get; set; } 
+                                                                       
+        private Genero Genero { get; set; } 
         private string Titulo { get; set; }
         private string Descricao { get; set; }
         private int Ano { get; set; }
@@ -117,7 +118,7 @@ namespace dio.appseries
        }
        public void Excluir() 
        {
-           this.Excluir = true;
+           this.Excluido = true;
        }
 
     }
