@@ -47,6 +47,38 @@ namespace dio.appseries
              console.ReadLine();
         }
 
+        private static void AtualizarSeries();
+        {
+            console.write("Digite o id da série: ");
+            it indideSerie = int.Parse(console.ReadLine());
+
+            // https://docs.microsoft.com/pt-br/dotnet/api/system.enum.getvalues?view=netcore-3.1
+           // https://docs.microsoft.com/pt-br/dotnet/api/system.enum.getname?view=netcore-3.1
+           foreach (int i in Enum.GetValues(typeof(Genero)))
+        {
+            console.writeline("{0}.{1}", i, Enum.GetName(typeof(Genero), i));
+        }
+        console.write("Digite o gênero entre as opções seguintes: ");
+        it entradaGenero = int.Parse(console.ReadLine());
+
+        console.write("Digite o Título da Série: ");
+        string entradaTitulo = console.ReadLine();
+
+        console.write("Digite o Ano de Início da Série: ");
+          string entradaAno = int.Parse(console.ReadLine());
+
+        console.write("Digite a Descição da Série: ");
+        string entradaDescricao = console.ReadLine();
+
+        Serie atualizarSerie = new Serie(id: indiceSerie), 
+                                    genero: (Genero)entradaGenero, 
+                                    titulo: entradaTitulo,
+                                    ano: entradaAno,
+                                    descricao: entradaDescricao);
+
+        repositorio.Atualiza(indiceSerie, atualizarSerie);
+        }
+
         private static void ListarSeries();
         {
             console.writeLine("Listar séries.");
