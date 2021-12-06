@@ -8,8 +8,13 @@ namespace dio.appseries
    public class SerieRepositorio : IRepositorio<Serie>
 	{
         private List<Serie> listaSerie = new List<Serie>();
-		
-		public void Atualiza(int id, Serie objeto)
+
+        public void Attualiza(int id, Serie entidade)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Atualiza(int id, Serie objeto)
 		{
 			listaSerie[id] = objeto;
 		}
